@@ -1,0 +1,20 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+body {width: 100%; margin: 0; font-family: 'NanumSquare', sans-serif; font-size: 14px;}
+p, h1, h2, h3 {margin: 0;}
+ul, li {list-style: none; padding: 0;}
+a {text-decoration: none;}
+.clearfix {content: ''; display: block; clear: both;}
+
+#form {width: 100%; height: fit-content; margin: 0 auto;}
+#form .form_budget {height: 58px; padding: 0 18px; line-height: 58px; font-size: 18px; color: #ffffff; background-color: #feac02;}
+#form .form_budget .budget_name {float: left; font-weight: 100;}
+#form .form_budget .budget_unit {float: right;}
+#form .form_budget .budget {float: right;}
+
+#form .form_header {padding: 20px 18px;}
+#form .form_header .category {float: left;}
+#form .form_header .report {float: right; text-decoration: underline; display: inline-block;}
+#form .form_header .report .ico {background: url(/img/report.png) no-repeat; width: 16px; height: 16px;}
+
+#form .form_detail {padding: 20px 18px;}
