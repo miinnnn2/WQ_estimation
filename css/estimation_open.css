@@ -12,9 +12,20 @@ a {text-decoration: none;}
 #form .form_budget .budget_unit {float: right;}
 #form .form_budget .budget {float: right;}
 
-#form .form_header {padding: 20px 18px;}
+#form .form_header {height: 16px; margin: 0 18px; padding: 20px 0; border-bottom: 1px solid #e5e5e5;}
 #form .form_header .category {float: left;}
-#form .form_header .report {float: right; text-decoration: underline; display: inline-block;}
-#form .form_header .report .ico {background: url(/img/report.png) no-repeat; width: 16px; height: 16px;}
+#form .form_header .report {float: right;}
+#form .form_header .report .report_ico {background: url(../img/report.png) no-repeat; width: 20px; height: 14px; display: inline-block;}
+#form .form_header .report .report_title {text-decoration: underline;}
 
-#form .form_detail {padding: 20px 18px;}
+#form .form_detail {margin: 0 18px; padding: 10px 0; border-bottom: 1px solid #e5e5e5;}
+#form .form_detail ul li {line-height: 25px;}
+#form .form_detail ul .company {font-size: 12px; font-weight: bold;}
+#form .form_detail ul .company_content .price {display: inline; float: right;}
+#form .form_detail .benefit {position: absolute; font-weight: bold; right: 18px; top: 150px; color: #ff6b6a; padding: 5px 14px; border: 1px solid #ff6b6a; border-radius: 5px;}
+
+#form .notice {padding: 21px 18px; font-size: 12px; color: #80333333;}
+
+#form .form_btn {margin: 39px 0 0 0; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; overflow: auto; zoom: 1;}
+#form .form_btn .btn_cancel {width: 50%; padding: 18.8px 0; float: left; border: none; font-size: 13px; color: #80333333; border-right: 1px solid #e5e5e5;}
+#form .form_btn .btn_apply {width: 50%; padding: 18.8px 0; float: left; border: none; font-size: 13px; color: #333333;}
