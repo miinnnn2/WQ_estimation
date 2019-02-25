@@ -28,4 +28,6 @@ a {text-decoration: none;}
 
 #form .form_btn {margin: 39px 0 0 0; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; overflow: auto; zoom: 1;}
 #form .form_btn .btn_cancel {width: 50%; padding: 18.8px 0; float: left; border: none; font-size: 13px; color: #80333333; border-right: 1px solid #e5e5e5;}
+#form .form_btn .btn_cancel:hover {background-color: #e5e5e5; color: #333333;}
 #form .form_btn .btn_apply {width: 50%; padding: 18.8px 0; float: left; border: none; font-size: 13px; color: #333333;}
+#form .form_btn .btn_apply:hover {background-color: #333333; color: #ffffff;}

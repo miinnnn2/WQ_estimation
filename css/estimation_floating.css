@@ -1,0 +1,12 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+body {width: 100%; margin: 0; font-family: 'NanumSquare', sans-serif; font-size: 14px;}
+p, h1, h2, h3 {margin: 0;}
+ul, li {list-style: none; padding: 0;}
+a {text-decoration: none;}
+.clearfix {content: ''; display: block; clear: both;}
+
+#floating {display: block; margin: 0 auto; width: 90%; padding: 18px 0; background-color: #feac02; text-align: center; border-radius: 7px; vertical-align: middle; text-decoration: none; font-size: 16px; font-weight: 400; color: #ffffff;}
+#floating .secret_box {display: inline-block; width: 100px; height: 30px; background-color: #e9e9e9; vertical-align: middle;}
+
+#floating:active {background-color:#fe9901;}

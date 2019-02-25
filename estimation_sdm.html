@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="//cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css">
+    <link rel="stylesheet" href="css/estimation_sdm.css">
+</head>
+<body>
+<div id="form">
+    <header class="top">
+        <button id="complete">완료</button>
+    </header>
+    <section id="form_title">
+        <div class="title">
+            <span>견적서 공유 <small>(선택)</small></span>
+            <span class="point">최대 300P 적립</span>
+        </div>
+        <div class="info">
+            <p>견적서를 공유해보세요! 다른 여신님들이 견적서를 보실 때마다<br>
+            최대 300P가 적립됩니다 :D</p>
+            <p class="notice">* 금액만 공유시에는 200P가 적립됩니다.</p>
+        </div>
+    </section>
+    <section id="form_detail">
+        <div class="company_info">
+            <span class="company">컨설팅 업체</span>
+            <input type="text" placeholder="컨설팅업체명 입력" class="input_companyName">
+        </div>
+        <div class="company_contents">
+            <table id="detail_table">
+                <tr class="row_company">
+                    <td class="company"><span>진행업체 1</span></td>
+                    <td class="company_detail">
+                        <p class="company_name">동감 스튜디오</p>
+                        <span><button id="btn_modify">수정</button></span>
+                        <span><button id="btn_delete">삭제</button></span>
+                    </td>
+                </tr>
+                <tr class="row_contents">
+                    <td class="company"><span>&nbsp</span></td>
+                    <td><input type="text" placeholder="상세 내용 추가"></td>
+                </tr>
+                <!-- <tr class="row_blank">
+                    <td class="blank"><span>&nbsp</span></td>
+                </tr>
+                <tr class="row_company">
+                    <td class="company"><span>진행업체 2</span></td>
+                    <td class="company_detail">
+                        <p class="company_name">동감 스튜디오</p>
+                        <span><button id="btn_modify">수정</button></span>
+                        <span><button id="btn_delete">삭제</button></span>
+                    </td>
+                </tr>
+                <tr class="row_contents">
+                    <td><span>&nbsp</span></td>
+                    <td><input type="text" placeholder="상세 내용 추가"></td>
+                </tr>
+                <tr class="row_blank">
+                    <td class="blank"><span>&nbsp</span></td>
+                </tr>
+                <tr class="row_company">
+                    <td class="company"><span>진행업체 3</span></td>
+                    <td class="company_detail">
+                        <input type="text" value="동감스튜디오" id="edit_companyNmae">
+                        <span><button id="btn_modify_done">수정 완료</button></span>
+                    </td>
+                </tr>
+                <tr class="row_contents">
+                    <td><span>&nbsp</span></td>
+                    <td><input type="text" placeholder="상세 내용 추가"></td>
+                </tr> -->
+            </table>
+        </div>
+    </section>
+    <section id="budget">
+        <p class="amount">총 금액</p>
+        <button id="btn_modify_amount">수정</button>
+        <p class="amountPrice">10,000&nbsp원</p>
+    </section>
+    <section id="separate">
+        <div class="separate_bar"></div>
+    </section>
+    <section id="attachment">
+        <div class="attach_info">
+            <span class="company">견적서 첨부</span>
+            <pre id="preview">첨부된 이미지 썸네일 보기</pre>
+            <!-- https://programmingsummaries.tistory.com/367 -->
+            <label for="attach_img">+ 첨부하기 <em>(+100P)</em></label>
+            <input type="file" id="attach_img">
+        </div>
+    </section>
+</div>
+<script
+src="https://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous"></script>
+<script>
+
+// Tag 리스트 시작 //
+let table = document.querySelector('#detail_table');
+
+let tableRowTag = `
+    <tr class="row_blank">
+        <td class="blank"><span>&nbsp</span></td>
+    </tr>
+    <tr class="row_company">
+        <td class="company"><span>진행업체 2</span></td>
+        <td class="company_detail">
+            <p class="company_name">동감 스튜디오</p>
+            <span><button id="btn_modify">수정</button></span>
+            <span><button id="btn_delete">삭제</button></span>
+        </td>
+    </tr>
+    <tr class="row_contents">
+        <td><span>&nbsp</span></td>
+        <td><input type="text" placeholder="상세 내용 추가"></td>
+    </tr>
+    <tr class="row_blank">
+        <td class="blank"><span>&nbsp</span></td>
+    </tr>
+    <tr class="row_company">
+        <td class="company"><span>진행업체 3</span></td>
+        <td class="company_detail">
+            <input type="text" value="동감스튜디오" id="edit_companyNmae">
+            <span><button id="btn_modify_done">수정 완료</button></span>
+        </td>
+    </tr>
+    <tr class="row_contents">
+        <td><span>&nbsp</span></td>
+        <td><input type="text" placeholder="상세 내용 추가"></td>
+    </tr>
+    `;
+
+table.insertAdjacentHTML(‘afterend’, tableRowTag);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+body {width: 100%; margin: 0; font-family: 'NanumSquare', sans-serif; font-size: 14px;}
+p, h1, h2, h3 {margin: 0;}
+ul, li {list-style: none; padding: 0;}
+a {text-decoration: none;}
+.clearfix {content: ''; display: block; clear: both;}
+
+#form {width: 577px; height: fit-content; margin: 0 auto;}
+#form .form_btn {padding: 25px 0; margin: 0 32px; text-align: right; border-bottom: 1px solid #e5e5e5;}
+#form .form_btn button {border: none; outline: none; font-size: 16px;}
+
+#form .form_title {padding: 25px 0 75.5px 0; margin: 0 32px;}
+#form .form_title .title {font-size: 19px; font-weight: bold;}
+#form .form_title .title span {display: inline-block;}
+#form .form_title .title small {font-size: 19px; font-weight: lighter; color: #80333333;}
+#form .form_title .title .point {font-size: 12px; font-weight: 200; color: #ffffff; background-color: #2699FB; border: #2699FB; padding: 6px 11px; border-radius: 50px; margin-left: 10px; vertical-align: middle;}
+#form .form_title .info {margin-top: 16px; line-height: 22px;}
+#form .form_title .info .notice {color: #80333333; margin-top: 10px;}
+
+#form .form_detail {margin: 0 32px;}
+#form .form_detail .company_info {border-bottom: 1px solid #e5e5e5; line-height: 40px; padding-bottom: 10px;}
+#form .form_detail .company_info .company {width: 85px; font-weight: bold; display: inline-block; float: left;}
+#form .form_detail .company_info .company_name {display: inline-block; font-size: 18px; font-weight: bold; padding-right: 10px;}
+#form .form_detail .company_info button {border: 1px solid #464646; border-radius: 1px; font-size: 12px; outline: 0; vertical-align: middle;}
+#form .form_detail .company_info .company_attach {display: inline-block; text-decoration: underline; float: right;}
+#form .form_detail .company_info .company_attach a {text-decoration: none; color: #333333;}
+
+/* 업체명 수정 클릭시 */
+#form .form_detail .company_info .company_name2 {width: 361px; display: inline-block;}
+#form .form_detail .company_info .company_name2 input[type=text] {width: 92%; height: 44px; border:1px solid #cccccc; padding: 0 10px; font-size: 16px;}
+#form .form_detail .company_info #modify_done {display: inline-block; border-radius: 1px; font-size: 12px; outline: 0; background-color: #464646; color: #ffffff; margin-left: 2px; padding: 6px 7px; font-weight: 300;}
+
+#form .form_detail .company_detail {padding: 18px 0 27px 0;}
+#form .form_detail .company_detail #detail_table {width: 513px;}
+#form .form_detail .company_detail #detail_table td {padding: 0;}
+#form .form_detail .company_detail #detail_table .table_row .company {width: 83px; font-weight: bold;} 
+#form .form_detail .company_detail #detail_table .table_row input[type=search] {width: 100%; height: 44px; border:1px solid #cccccc; padding: 0 10px; font-size: 14px;}
+#form .form_detail .company_detail #detail_table .table_row input[type=text] {width: 89%; height: 40px; text-align: right; padding: 0 10px; font-size: 14px;}
+
+#form .form_detail .add_detail {text-align: right;}
+#form .form_detail .add_detail #add {font-weight: bold; font-size: 14px; border: none; outline: 0;}
+
+#form .form_detail .budget {padding: 15px 0; font-size: 18px; font-weight: bold; overflow: auto; margin-top: 18px; border-top: 1px solid #e5e5e5;}
+#form .form_detail .budget .amount {display: inline; line-height: 40px;}
+#form .form_detail .budget #btn_modify_amount {border: 1px solid #464646; border-radius: 1px; font-size: 12px; outline: 0; margin-left: 10px; vertical-align: middle;}
+#form .form_detail .budget .amountPrice {line-height: 40px; float: right;}
+
+/* 합계금액 수정 클릭시 */
+#form .form_detail .budget input[type=text] {width: 205px; height: 40px; text-align: right; padding: 0 10px; font-size: 18px; margin-left: 146px;}
+#form .form_detail .budget #modify_amound_done {display: inline-block; border-radius: 1px; font-size: 12px; outline: 0; background-color: #464646; color: #ffffff; margin-left: 2px; padding: 6px 7px; font-weight: 300;}

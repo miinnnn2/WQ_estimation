@@ -6,13 +6,13 @@ ul, li {list-style: none; padding: 0;}
 a {text-decoration: none;}
 .clearfix {content: ''; display: block; clear: both;}
 
-#form {width: 100%; height: fit-content; margin: 0 auto;}
+#form {width: 100%; height: fit-content; margin: 0 auto; box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);}
 #form .form_title {height: 58px; background-color: #f6f6f4;}
 #form .form_title .title {font-size: 18px; font-weight: bold; text-align: center; line-height: 58px;}
 
-#form .form_status {text-align: right; padding: 15px 19px;}
+#form .form_status {position: relative; text-align: right; padding: 15px 19px;}
 #form .form_status .status {font-size: 12px;}
-#form .form_status .ico {position: absolute; right: 105px; top: 75px;}
+#form .form_status .ico {background: url(../img/pass.png) no-repeat; width: 15px; height: 13px; display: inline-block; position: absolute; right: 105px; top: 16.5px;}
 
 #form .form_detail {position: relative; margin: 0px 19px; padding: 18px 0 10px 0; border-bottom: 1px solid #e9e9e9;}
 #form .form_detail ul li {line-height: 25px;}
@@ -24,6 +24,8 @@ a {text-decoration: none;}
 #form .form_budget .budget_hidden {position: absolute; right: 20px; top: 18px; background-color: #464646; color: #FFFFFF; font-weight: 300; padding: 6px 23px; border-radius: 5px;}
 #form .form_budget .budget_unit {float: right;}
 
-#form .form_btn {margin: 50px 0; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; overflow: auto; zoom: 1; background-color: aquamarine;}
+#form .form_btn {margin: 50px 0 0 0; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; overflow: auto; zoom: 1; background-color: aquamarine;}
 #form .form_btn .btn_cancel {width: 50%; padding: 18.8px 0; float: left; border: none; font-size: 13px; color: #80333333; border-right: 1px solid #e5e5e5;}
+#form .form_btn .btn_cancel:hover {background-color: #e5e5e5; color: #333333;}
 #form .form_btn .btn_apply {width: 50%; padding: 18.8px 0; float: left; border: none; font-size: 13px; color: #3497fd;}
+#form .form_btn .btn_apply:hover {background-color: #3497fd; color: #ffffff;}
